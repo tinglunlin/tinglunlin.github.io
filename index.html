@@ -1,7 +1,296 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale= 1.0, user-scalable=no">
+
+<title>Tinglun Works</title>
+<link rel="stylesheet" href="css/reset.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js"></script>
+
+
+</head>
+
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<div class="warpper">
+<div id="main">
+<div id="header" class="">
+  <div class="logo">
+    <a href=""><img src="images/logo.png" alt="" /></a>
+  </div>
+  <input class="bg-check" id="bg-check" type="checkbox">
+  <label for="bg-check" class="bg-menu">
+    <span class="icon-line"></span>
+  </label>
+  <div class="select-nav nav mixmenu">
+    <div class="filter-all"><span data-filter="all">ALL</span></div>
+    <div class="clients">
+      <div class="nav-selected">Filter</div>
+    </div>   
+
+    <div class="date">
+      <ul>
+        <li data-sort="published-date:desc">近期作品</li>
+        <li>/</li>
+        <li data-sort="published-date:asc">早期作品</li>
+      </ul>
+    </div>
+
+  </div> 
+  
+  <div class="navContent">
+        <div class="close"><span class="icon-bar"><span class="txt">close</span></span></div>
+        <h2>Category</h2>
+        <ul>
+          <li class="filter" data-filter=".events">活動網站</li>
+          <li class="filter" data-filter=".website">官方網站</li>
+          <li class="filter" data-filter=".banner">數位宣傳</li>
+<!--           <li class="filter" data-filter=".video">動態影片</li>
+          <li class="filter" data-filter=".print">平面輸出</li> -->
+        </ul>
+        <h2>Clients</h2>
+        <ul>
+          <li class="filter" data-filter=".landrover">LandRover</li>
+          <li class="filter" data-filter=".jaguar">JAGUAR</li>
+          <li class="filter" data-filter=".dominos">Dominos</li>
+          <li class="filter" data-filter=".asus">ASUS</li>
+          <li class="filter" data-filter=".schroders">Schroders</li>
+          <li class="filter" data-filter=".samsung">Samsung</li>
+          <li class="filter" data-filter=".mb">台灣賓士</li>
+          <li class="filter" data-filter=".mini">MINI</li>
+          <li class="filter" data-filter=".huanan">華南金控</li>
+          <li class="filter" data-filter=".tng">THE NAKED GROUSE</li>
+          <li class="filter" data-filter=".honda">Honda</li>
+           <li class="filter" data-filter=".citi">Citi HK</li>
+        </ul>
+      </div>
+
+
+	 	
+
+</div>
+
+<div class="Container">
+  
+
+  <div class="project-list">
+    <a class="mix citi events" target="_blank"
+    href="https://www.citibank.com.hk/chinese/loans/tactical/loans.html" data-published-date="2018-05">
+      <div class="photo"><img src="images/citibank/citi-001.jpg" alt="" /></div>
+      <div class="text">
+        <h3>2018.05</h3>
+        <h2>Citi 貸醒了</h2>
+        <p>Citi / <span></span></p>
+      </div>
+    </a>
+    <a class="mix honda banner" target="_blank"
+    href="images/honda/show/index.html" data-published-date="2017-03">
+      <div class="photo"><img src="images/honda/honda-001.jpg" alt="" /></div>
+      <div class="text">
+        <h3>2017.03</h3>
+        <h2>Honda CR-V 廣告提案</h2>
+        <p>Honda / <span></span></p>
+      </div>
+    </a>
+    <a class="mix landrover events" target="_blank"
+    href="http://lr.webssup-tw.com/rrsdc-201612/v1/" data-published-date="2016-12">
+      <div class="photo"><img src="images/lr/lr-001.jpg" alt="" /></div>
+      <div class="text">
+        <h3>2016.12</h3>
+        <h2>LandRover - RRS Lading Page</h2>
+        <p>Land Rover / <span></span></p>
+      </div>
+    </a>
+
+    <a class="mix jaguar banner" target="_blank"
+    href="http://demo-d2.webssup.com/Jaguar/banner/JAG-4_F-TYPE_H5Banner_201702/v1/" data-published-date="2017-02">
+      <div class="photo"><img src="images/jag/jag-005.jpg" alt="" /></div>
+      <div class="text">
+        <h3>2017.02</h3>
+        <h2>F-TYPE Banner</h2>
+        <p>JAGUAR / <span></span></p>
+      </div>
+    </a>
+
+    <a class="mix jaguar banner" target="_blank"
+    href="http://demo-d2.webssup.com/Jaguar/banner/JAG-1610_TheArtOfPerformanceTourBanner_201610/v1/" data-published-date="2016-10">
+      <div class="photo"><img src="images/jag/jag-010.jpg" alt="" /></div>
+      <div class="text">
+        <h3>2016.10</h3>
+        <h2>The Art Of Performance Tour Banner</h2>
+        <p>JAGUAR / <span></span></p>
+      </div>
+    </a>
+    
+    <a class="mix asus events" target="_blank"
+    href="http://demo-d2.webssup.com/Asus/events/201708_Mika-Ninagawa2/html/v24/" data-published-date="2017-11">
+      <div class="photo"><img src="images/asus/asus-004.jpg" alt="" /></div>
+      <div class="text">
+        <h3>2017.11</h3>
+        <h2>Asus Zenbook x 蜷川實花聯名</h2>
+        <p>Asus / <span></span></p>
+      </div>
+    </a>
+
+    <a class="mix asus events" target="_blank"
+    href="http://demo-d2.webssup.com/Asus/events/201610_Mika-Ninagawa/v1/" data-published-date="2016-11">
+      <div class="photo"><img src="images/asus/asus-001.jpg" alt="" /></div>
+      <div class="text">
+        <h3>2016.11</h3>
+        <h2>Asus Zen3 x 蜷川實花聯名</h2>
+        <p>Asus / <span></span></p>
+      </div>
+    </a>
+
+    <a class="mix schroders events" target="_blank"
+    href="http://www.incomeiq.com.tw/yesfund/" data-published-date="2016-07">
+      <div class="photo"><img src="images/schroders/schroders-003.jpg" alt="" /></div>
+      <div class="text">
+        <h3>2016.07</h3>
+        <h2>IncomeIQ 債嚐滿分</h2>
+        <p>Schroders / <span></span></p>
+      </div>
+    </a>
+
+    <a class="mix schroders events" target="_blank"
+    href="http://www.incomeiq.com.tw/itraining/2024TMF" data-published-date="2017-12">
+      <div class="photo"><img src="images/schroders/schroders-005.jpg" alt="" /></div>
+      <div class="text">
+        <h3>2017.12</h3>
+        <h2>IncomeIQ 幸福滿分</h2>
+        <p>Schroders / <span></span></p>
+      </div>
+    </a>
+
+    <a class="mix samsung events" target="_blank"
+    href="http://demo-d2.webssup.com/samsung/events/201605/" data-published-date="2016-05">
+      <div class="photo"><img src="images/samsung/samsung-001.jpg" alt="" /></div>
+      <div class="text">
+        <h3>2016.05</h3>
+        <h2>mySamsung 網上登入活動</h2>
+        <p>Samsung / <span></span></p>
+      </div>
+    </a>
+
+    
+    <a class="mix mb website" target="_blank"
+    href="https://mb-agility.com/" data-published-date="2018-03">
+      <div class="photo"><img src="images/mb/mb-005.jpg" alt="" /></div>
+      <div class="text">
+        <h3>2018.03</h3>
+        <h2>台灣賓士資融 Agility</h2>
+        <p>台灣賓士 / <span></span></p>
+      </div>
+    </a>
+
+
+    <a class="mix mb website" target="_blank"
+    href="https://www.mb-agility.com/mb/" data-published-date="2018-03">
+      <div class="photo"><img src="images/mb/mb-006.jpg" alt="" /></div>
+      <div class="text">
+        <h3>2018.03</h3>
+        <h2>MB Agility 台灣賓士星自選</h2>
+        <p>台灣賓士 / <span></span></p>
+      </div>
+    </a>
+
+    <a class="mix mb website" target="_blank"
+    href="http://www.mb-agility.com/smart/" data-published-date="2017-09">
+      <div class="photo"><img src="images/mb/mb-001.jpg" alt="" /></div>
+      <div class="text">
+        <h3>2017.09</h3>
+        <h2>smart Agility</h2>
+        <p>台灣賓士 / <span></span></p>
+      </div>
+    </a>
+
+    <a class="mix mb banner" target="_blank"
+    href="http://demo-d2.webssup.com/Mercedes-Benz/banner/CES-4_AgilityFacebookBanner_201704/v1/" data-published-date="2017-04">
+      <div class="photo"><img src="images/mb/mb-004.jpg" alt="" /></div>
+      <div class="text">
+        <h3>2017.04</h3>
+        <h2>台灣賓士資融 Facebook <span></span></h2>
+        <p>台灣賓士 / <span></span></p>
+      </div>
+    </a>
+
+    <a class="mix mini banner" target="_blank"
+    href="http://demo-d2.webssup.com/Mini/banner/1608-B1/v1/" data-published-date="2016-08">
+      <div class="photo"><img src="images/mini/mini-001.jpg" alt="" /></div>
+      <div class="text">
+        <h3>2016.08</h3>
+        <h2>MINI Sever Banner</h2>
+        <p>Mini / <span></span></p>
+      </div>
+    </a>
+
+    <a class="mix mini banner" target="_blank"
+    href="http://demo-d2.webssup.com/Mini/banner/1608-B2/v1/" data-published-date="2016-08">
+      <div class="photo"><img src="images/mini/mini-002.jpg" alt="" /></div>
+      <div class="text">
+        <h3>2016.08</h3>
+        <h2>MINI Sever Banner</h2>
+        <p>Mini / <span></span></p>
+      </div>
+    </a>
+    
+    <a class="mix huanan events" target="_blank"
+    href="http://www.hnevent.com.tw/wonderfullife/" data-published-date="2017-09">
+      <div class="photo"><img src="images/huanan/huanan-002.jpg" alt="" /></div>
+      <div class="text">
+        <h3>2017.09</h3>
+        <h2>華南銀行 美滿人生</h2>
+        <p>華南金控 / <span></span></p>
+      </div>
+    </a>
+
+    <a class="mix tng banner" target="_blank"
+    href="http://demo-d2.webssup.com/TheNakedGrouse/NG-1611_FacebookCanvasAdsNov_201611/v1/" data-published-date="2016-11">
+      <div class="photo"><img src="images/tng/tng-002.jpg" alt="" /></div>
+      <div class="text">
+        <h3>2016.11</h3>
+        <h2>Facebook Canvas</h2>
+        <p>The Naked Grouse / <span></span></p>
+      </div>
+    </a>
+
+    <a class="mix dominos website" target="_blank"
+    href="http://demo-d2.webssup.com/Dominos/website/201611/v1/" data-published-date="2016-11">
+      <div class="photo"><img src="images/dom/dom-002.jpg" alt="" /></div>
+      <div class="text">
+        <h3>2016.11</h3>
+        <h2>Official Website</h2>
+        <p>Dominos / <span></span></p>
+      </div>
+    </a>
+
+    
+
+    
+    
+    
+  </div>
+
+</div>
+
+
+</div>
+</div>
+<script src="js/mixitup.min.js"></script>
+<script src="js/main.js"></script>
+
+<script>
+  $(function(){
+    $('.nav-menu li').click(function(){
+      $('#bg-check').prop("checked", false);
+    });
+    $('.clientsbtn').click(function(){
+      $('#bg-check').prop("checked", true);
+    });
+  });
+</script>
 </body>
 </html>
