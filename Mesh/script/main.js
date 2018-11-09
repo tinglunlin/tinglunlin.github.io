@@ -8,7 +8,7 @@ $(function() {
     }
     
     // 選擇 Router 
-    $('.select .router li').on('click touchstart',function(){
+    $('.select .router li').click(function(){
       
       let pos_1 = $('.device_area .device_pos1').attr('data'),
           pos_2 = $('.device_area .device_pos2').attr('data'),
@@ -41,7 +41,7 @@ $(function() {
     })
 
     // 選擇 Extender
-    $('.select .extender li').on('click touchstart',function(){
+    $('.select .extender li').click(function(){
       let thisExtenderType = $(this).attr('modelType')
       let thisExtenderSrc = $(this).children('img').attr('src')
       $('.select li').removeClass('active')
@@ -57,7 +57,7 @@ $(function() {
     })
 
     // pos 裝置放置的位置
-    $('.device_area div').on('click touchstart',function(){
+    $('.device_area div').click(function(){
       // console.log(SelectData.modelType)
       // console.log(SelectData.imgSrc)
 
