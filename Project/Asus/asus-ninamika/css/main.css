@@ -879,7 +879,9 @@ header .overlay ul li.btn-startint.v-desktop, header .overlay ul li a.v-desktop{
 #section2.section, #section4.section, #section6.section{height:auto !important;}
 #section2.section .fp-tableCell, #section4.section .fp-tableCell, #section6.section .fp-tableCell{height:auto !important;}
 #section8.section, #section9.section, #section10.section{height:550px !important;}
-#section8.section .fp-tableCell, #section9.section .fp-tableCell, #section10.section .fp-tableCell{height:550px !important;}
+#section8.section, #section9.section, #section10.section{height:auto !important;}
+/* #section8.section .fp-tableCell, #section9.section .fp-tableCell, #section10.section .fp-tableCell{height:550px !important;} */
+#section8.section .fp-tableCell, #section9.section .fp-tableCell, #section10.section .fp-tableCell{height:auto !important;}
 .wireframe .logo{width:150px;height:51px;}
 .wireframe .line_H.top{left:170px;width:calc(100% - 170px - 60px);}
 .wireframe .line_V.left{height:calc(100% - 40px);}
