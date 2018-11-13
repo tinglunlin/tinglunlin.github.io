@@ -1,0 +1,17 @@
+#section4 .photos {
+  height: auto;
+  position: absolute;
+  background-color: #ffffff;
+  bottom: 0;
+  width: 100%;
+}
+
+.coming .iframe-wrap {
+  width: 560px;
+  height: 315px;
+}
+
+.coming iframe {
+  width: 560px;
+  height: 315px;
+}

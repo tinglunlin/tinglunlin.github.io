@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale= 1.0, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<link rel="stylesheet" href="css/reset.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/main.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/fullpage.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/slick.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/rwd.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/modal.css" type="text/css" media="all" />
+<link type="text/css" rel="stylesheet" media="screen" href="css/jquery-sakura.min.css" />
+<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" media="all" />
+
+<title>ASUS x 蜷川實花 美不勝收</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+<script src="js/jquery.fullpage.min.js"></script>
+<script src="js/bgfill.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/jquery-sakura.js"></script>
+<script src="js/smooth-scroll.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+
+<script type="text/javascript">
+        window.ASUSInit = function () {
+            asus_api.init({ appid: 'event00000' , lang: 'tw', api_menu_logo: '1'});
+        };
+        (function(d){
+            var js, id = 'asus-jsapi';
+            if (d.getElementById("asus-jsapi")) {return;}
+            js = d.createElement('script');
+            js.id = id;
+            js.async = true;
+            js.src = "//www.asus.com/API/js/asus_api.js";
+            d.getElementsByTagName('head')[0].appendChild(js);            
+        }(document));
+</script>
+
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-NJRLM8"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NJRLM8');</script>
+<!-- End Google Tag Manager -->
+
+<script>
+    // domReady
+    $(function() {
+        $('.s-body').sakura();
+
+        $(".btn-skip").click(function(){
+        $(".s-body").hide(); 
+        $('.s-body').sakura("stop");
+        });
+        $(".btn-startint").click(function(){            
+          $(".s-body").show(); 
+          $('.s-body').sakura();
+          gaClick("menus /clicked /design idea","menus","clicked","design idea");
+        });        
+    });
+</script>
+
+<script>
+    $(document).ready(function() {
+      var bo = true;
+      if($(window).width() < 1010 ) { bo = false;}      
+
+      $('#fullpage').fullpage({
+        anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7'],
+        autoScrolling: bo,
+        menu: '#menu',
+        onLeave: function(anchorLink, index){
+
+          if(index == 1){
+            $("#marker").removeClass().addClass("marker"); 
+            $('#section1 .page1-title').removeClass('page1-title-start');
+            $('#section2 .page2-title').removeClass('page2-title-start');
+            $('#section3 .page2-title').removeClass('page2-title-start');             
+          }
+          if(index == 2){
+            $("#marker").removeClass().addClass("hover1");
+            $('#section2 .page2-title').removeClass('page2-title-start');
+            $('#section3 .page3-title').removeClass('page3-title-start');
+            $('#section1 .page1-title').addClass('page1-title-start');
+            $('#section1 .cont-p1-mov').addClass('cont-p1-mov-start'); 
+          }
+          if(index == 3){
+            $("#marker").removeClass().addClass("hover1");
+            $('#section1 .page1-title').removeClass('page1-title-start');
+            $('#section3 .page3-title').removeClass('page3-title-start');
+            $('#section2 .page2-title').addClass('page2-title-start');
+            $('#section2 .cont-p2-mov').addClass('cont-p2-mov-start');  
+          }
+          if(index == 4){
+            $("#marker").removeClass().addClass("hover1");
+            $('#section1 .page1-title').removeClass('page1-title-start');
+            $('#section2 .page2-title').removeClass('page2-title-start');
+            $('#section3 .page3-title').addClass('page3-title-start');
+            $('#section3 .cont-p3-mov').addClass('cont-p3-mov-start');   
+          }
+          if(index == 5){
+            $("#marker").removeClass().addClass("hover2");
+            $('#section1 .page1-title').removeClass('page1-title-start');
+            $('#section2 .page2-title').removeClass('page2-title-start');
+            $('#section3 .page2-title').removeClass('page2-title-start');
+          }
+          if(index == 6){
+            $("#marker").removeClass().addClass("hover3");
+            $('#section1 .page1-title').removeClass('page1-title-start');
+            $('#section2 .page2-title').removeClass('page2-title-start');
+            $('#section3 .page2-title').removeClass('page2-title-start');
+          }
+          if(index == 7){
+            $("#marker").removeClass().addClass("hover4");
+            $('#section1 .page1-title').removeClass('page1-title-start');
+            $('#section2 .page2-title').removeClass('page2-title-start');
+            $('#section3 .page2-title').removeClass('page2-title-start');
+          }
+
+        }
+      });
+      if($(window).width() < 1010 ) { 
+        $.fn.fullpage.setResponsive(true);
+    } 
+});
+</script>
+<script src="js/main.js"></script>
+<script>
+    smoothScroll.init({offset: 90});
+</script>
+
+</head>
+
+<body>
+
+<div class="wrapper">
+<div class="s-body">
+<div id="allpage">
+<div class="Asus-Logo"></div>
+<div class="solid-border"></div>
+
+<div class="loading-txt">
+<div class="txt-1">華碩不斷地創新，亦師法大自然，</div>
+<div class="txt-2">探討不同個體與元素間如何透過互動彼此連結，</div>
+<div class="txt-3">藉由尖端技術、人文內涵與自然元素的完美結合，</div>
+<div class="txt-4">演繹兼具平衡、和諧的「Zen」禪意美學。</div>
+<div class="txt-5 desktop">此次特別邀請日本知名當代藝術家「蜷川實花」聯名合作，</div>
+<div class="txt-6 desktop">以華麗繽紛的風格，色彩鮮明的花朵與Zen 3系列結合，</div>
+<div class="txt-7 desktop">精采詮釋科技與自然之美，並藉由色彩鮮豔的背景，</div>
+<div class="txt-8 desktop">烘托出產品的素雅，運用漂浮感的擺設手法體現產品的輕盈；</div>
+<div class="txt-9 desktop">更以錯綜的排列，打造出完美融合的畫面。</div>
+
+<div class="txt-5 mo">此次特別邀請日本知名當代藝術家</div>
+<div class="txt-6 mo">「蜷川實花」聯名合作，以華麗繽紛的風格，</div>
+<div class="txt-7 mo">色彩鮮明的花朵與Zen 3系列結合，</div>
+<div class="txt-8 mo">精采詮釋科技與自然之美，並藉由色彩鮮豔的背景，</div>
+<div class="txt-9 mo">烘托出產品的素雅，</div>
+<div class="txt-10 mo">運用漂浮感的擺設手法體現產品的輕盈；</div>
+<div class="txt-11 mo">更以錯綜的排列，</div>
+<div class="txt-12 mo">打造出完美融合的畫面。</div>
+
+</div>
+
+<div class="btn-skip skpc" onclick="gaClick('Banner / clicked / index skip','buttons','clicked','index skip')"><span>SKIP</span></div>
+<div class="btn-skip skmo"><span>SKIP</span></div>
+
+</div>
+</div>
+
+<div id="af-header" class="aai-ez" style="z-index: 2;position: fixed;padding-top: 0;background:#ffffff;">
+  <div class="af-inner">
+    <div><a id="top_index" title="ASUS" href="//www.asus.com/tw/" target="_blank" class="logo"></a></div>
+  </div>
+</div>
+
+<div class="menu" id="menu" style="top:30px;">
+
+		<h1 class="logo"><a href="#page1"><img src="img/Asus_logo.svg"></a></h1>
+		<h1 class="logo_m"><a data-scroll href="#section0"><img src="img/Asus_logo.svg"></a></h1>
+
+	 	<ul class="noshowmobile">
+	 		<li><a href="#page1" class="btn-startint">設計理念</a></li></a>
+	 		<li><a href="#">產品介紹</a>
+		 		<ul class="drop">
+			        <div class="drop-div">
+			        <li class="drop-li"  data-menuanchor="page2" onclick="gaClick('menus /clicked /product info','menus','clicked','product info')"><a href="#page2"><div></div></a></li>
+			        <li class="drop-li"  data-menuanchor="page3" onclick="gaClick('menus /clicked /product info','menus','clicked','product info')"><a href="#page3"><div></div></a></li>
+			        <li class="drop-li"  data-menuanchor="page4" onclick="gaClick('menus /clicked /product info','menus','clicked','product info')"><a href="#page4"><div></div></a></li>
+			        </div>
+			      </ul>
+		    </li>
+		    <li data-menuanchor="page5" onclick="gaClick('menus /clicked /highlight','menus','clicked','highlight')"><a href="#page5">記者會直擊</a></li>
+	 		<li data-menuanchor="page6" onclick="gaClick('menus /clicked /celebrity share','menus','clicked','blogger share')"><a href="#page6">名人分享</a></li>
+	 		<li data-menuanchor="page7" onclick="gaClick('menus /clicked /wallpaper download','menus','clicked','wallpaper download')"><a href="#page7">桌布下載</a></li>
+	 		<div id="marker" class="marker"></div>
+	 	</ul> 	
+
+	 	<input class="bg-check" id="bg-check" type="checkbox">
+		<label for="bg-check" class="bg-menu">
+		<span class="icon-bar"></span>
+		</label>
+		<div id="nav-menu" class="nav-menu">
+			<ul>
+			<a href="#" class="btn-startint"><li>設計理念</li></a>			
+			<a data-scroll href="#section1"><li><img src="img/zenbook3_w.svg"> 介紹</li></a>
+			<a data-scroll href="#section2"><li><img src="img/zenfone3_w.svg"> 介紹</li></a>
+			<a data-scroll href="#section3"><li><img src="img/zenpad3_w.svg"> 介紹</li></a>
+			<a data-scroll href="#section4"><li>記者會直擊</li></a>
+			<a data-scroll href="#section5"><li>名人分享</li></a>
+			<a data-scroll href="#section6"><li>桌布下載</li></a>
+			</ul>
+		</div>
+</div>
+
+
+
+
+<div class="main" id="fullpage">
+    <div class="section fp-auto-height-responsive" id="section0">
+
+	      <ul id="scene">
+	        <li class="layer" data-depth="0.1">
+	          <div class="layer1"></div>
+	        </li>
+	        <li class="layer" data-depth="0">
+	          <div class="layer2">
+	          <img src="img/prettyword_w.svg">
+	          <div class="des">
+		      	<h3><img src="img/mastername_w.svg">設計理念</h3>
+		      	<p>以各種鮮豔的花朵展現產品共有的時尚感，並運用不同的色彩主題凸顯各個產品不同的特色。</p></div>
+		      	<div class="introduction" id="myBtn-c">蜷川實花簡介</div>
+	          <div class="getpacket" id="myBtn"></div>
+	          </div>
+	        </li>
+	      </ul>
+
+	      <div class="mobile_p1">
+	      	<img src="img/prettyword_w.svg" class="prettyword_w">
+	      	<div class="des">
+	      	<h3><img src="img/mastername_w.svg">設計理念<div class="introduction" id="myBtn-d">蜷川實花簡介</div></h3>
+	      	<p>以各種鮮豔的花朵展現產品共有的時尚感，並運用不同的色彩主題凸顯各個產品不同的特色。</p></div>
+	      	<div class="getpacket" id="myBtn-b"></div>
+	      </div>
+
+    </div>
+    <div class="section page2 fp-auto-height-responsive" id="section1">
+
+		<div class="page1txt page1-title"><img src="img/page1txt.png"></div>
+<input class="extend_1" id="extend_1" type="checkbox">
+		<div class="content_p cont-p1-mov">
+			<div class="design_concept">
+				<h3><img src="img/mastername_w.svg">設計理念<label for="extend_1" class="extend_btn sprite-btn-arrow_01"><span class="line"></span></label></h3>
+				<p>玫瑰金配色做為創作靈感，襯底以粉色系搭配黃色花朵點綴，彰顯<img src="img/zenbook3_w.svg">的絕美質感，呈現優雅不凡的品味。</p>
+			</div>
+			<div class="product_char no-menu">
+				<h3>絕美設計</h3>
+				<ul>
+					<li>經典同心圓髮絲紋</li>
+					<li>玫瑰金、皇家藍、石英灰搭配金色點綴，呈現時尚撞色設計</li>
+				</ul>
+			</div>
+			<div class="product_char no-menu">
+				<h3>極致輕薄</h3>
+				<ul>
+					<li>搭載最新第7代 Intel® Core™ i7 處理器</li>
+					<li>最高16G RAM / 512GB PCIe® 3.0 x 4 SSD</li>
+				</ul>
+			</div>
+			<div class="product_char no-menu">
+				<h3>行動無界限</h3>
+				<ul>
+					<li>薄僅 11.9mm，輕僅 910g</li>
+					<li>長達9小時電池續航力</li>
+				</ul>
+			</div>
+			<div class="details no-menu">
+				<a href="https://www.asus.com/tw/Notebooks/ASUS-ZenBook-3-UX390UA/" target="_blank"><div class="more"  onclick="gaClick('buttons /clicked /learn more-nb','buttons','clicked','learn more-nb')">了解<br>更多</div></a>
+				<a href="desktop/AsusXNinamikaDM.pdf" target="_blank"><div class="catalog"   onclick="gaClick('buttons /clicked /catalog-nb','buttons','clicked','Catalog-nb')">產品<br>型錄</div></a>
+				<div class="buy"   onclick="gaClick('buttons /clicked /buynow-nb','buttons','clicked','Buynow-nb')">立即<br>購買
+					<div class="shop-menu">
+						<ul>
+							<a href="http://store.asus.com/tw/category/A46955" target="_blank"><li>ASUS STORE</li></a>
+							<a href="http://ecshweb.pchome.com.tw/search/v3.3/?q=zenbook3&scope=all&sortParm=rnk&sortOrder=dc&cateId=QAAH" target="_blank"><li>PChome</li></a>
+							<a href="https://tw.search.buy.yahoo.com/search/shopping/product?p=UX390&qt=product&cid=1&clv=2&hpp=brand_03" target="_blank"><li>YAHOO! 購物中心</li></a>
+							<a href="http://www.momoshop.com.tw/mosearch/itri/zenbook%203.html" target="_blank"><li>momo購物網</li></a>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+
+    </div>
+    <div class="section page3 fp-auto-height-responsive" id="section2">
+
+    	<div class="page2txt page2-title"><img src="img/page2txt.svg"></div>
+<input class="extend_2" id="extend_2" type="checkbox">
+		<div class="content_p cont-p2-mov">
+			<div class="design_concept">
+				<h3><img src="img/mastername_w.svg">設計理念<label for="extend_2" class="extend_btn sprite-btn-arrow_02"><span class="line"></span></label></h3>
+				<p>由藍寶黑雅緻色調得到靈感，搭配紫、藍色鮮花，烘托<img src="img/zenfone3_w.svg">洗鍊輪廓，優雅質感，絕美綻放。</p>
+			</div>
+			<div class="product_char no-menu">
+				<h3>絕對有型</h3>
+				<ul>
+					<li>前後2.5D康寧強化玻璃</li>
+					<li>5.5吋FHD 超窄邊框螢幕</li>
+				</ul>
+			</div>
+			<div class="product_char no-menu">
+				<h3>絕佳效能</h3>
+				<ul>
+					<li>高通® S625八核心處理器、4G RAM</li>
+					<li>指紋辨識，安全升級</li>
+				</ul>
+			</div>
+			<div class="product_char no-menu">
+				<h3>絕對出色</h3>
+				<ul>
+					<li>後鏡頭1600萬畫素+光學、電子防手震、前鏡頭800萬畫素</li>
+					<li>0.03秒TriTech三混對焦，動靜皆好拍</li>
+				</ul>
+			</div>
+			<div class="details no-menu">
+				<a href="https://www.asus.com/tw/Phone/ZenFone-3-ZE552KL/" target="_blank"><div class="more" onclick="gaClick('buttons /clicked /learn more-phone','buttons','clicked','learn more-phone')">了解<br>更多</div></a>
+				<a href="desktop/AsusXNinamikaDM.pdf" target="_blank"><div class="catalog" onclick="gaClick('buttons /clicked /catalog-phone','buttons','clicked','catalog-phone')">產品<br>型錄</div></a>
+				<div class="buy" onclick="gaClick('buttons /clicked /buynow-phone','buttons','clicked','buynow-phone')">立即<br>購買
+					<div class="shop-menu">
+						<ul>
+							<a href="http://store.asus.com/tw/category/A45792?_ga=1.58793965.1199006764.1469430886" target="_blank"><li>ASUS STORE</li></a>
+							<a href="http://24h.pchome.com.tw/region/DGCC" target="_blank"><li>PChome</li></a>
+							<a href="https://tw.buy.yahoo.com/?catitemid=106408" target="_blank"><li>YAHOO! 購物中心</li></a>
+							<a href="http://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=1912900218&osm=googleKw&ctype=B&cid=gokeyword&oid=goMKdsa&sdiv=ky02&utm_source=google&utm_medium=cpc&utm_content=keyword&gclid=CKrd4ruk684CFVMIvAodCwMNZg" target="_blank"><li>momo購物網</li></a>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+    </div>
+    <div class="section page4 fp-auto-height-responsive" id="section3">
+    	<div class="page3txt page3-title"><img src="img/page3txt.png"></div>
+<input class="extend_3" id="extend_3" type="checkbox">
+		<div class="content_p cont-p3-mov">
+			<div class="design_concept">
+				<h3><img src="img/mastername_w.svg">設計理念<label for="extend_3" class="extend_btn sprite-btn-arrow_03"><span class="line"></span></label></h3>
+				<p>以鮮紅色花朵襯托<img src="img/zenpad3_w.svg">銀、灰色俐落金屬機身，呼應細膩螢幕完美展現的嬌豔，讓視界滿溢熱情與溫暖。</p>
+			</div>
+			<div class="product_char no-menu">
+				<h3>完美影像</h3>
+				<ul>
+					<li>5.3mm世界最窄邊框</li>
+					<li>首創Tru2Life電視等級晶片、2K超高畫質</li>
+				</ul>
+			</div>
+			<div class="product_char no-menu">
+				<h3>完美音質</h3>
+				<ul>
+					<li>Hi-Res音效享受4倍CD音質</li>
+					<li>DTS Headphone:X™ 技術 7.1 聲道</li>
+				</ul>
+			</div>
+			<div class="product_char no-menu">
+				<h3>完美效能</h3>
+				<ul>
+					<li>指紋辨識一秒解鎖</li>
+					<li>5900mAh快充3.0強效電力</li>
+				</ul>
+			</div>
+			<div class="details no-menu">
+				<a href="https://www.asus.com/tw/Tablets/ASUS-ZenPad-3S-10-Z500M/" target="_blank"><div class="more" onclick="gaClick('buttons /clicked /learn more-tablet','buttons','clicked','learn more-tablet')">了解<br>更多</div></a>
+				<a href="desktop/AsusXNinamikaDM.pdf" target="_blank"><div class="catalog" onclick="gaClick('buttons /clicked /catalog-tablet','buttons','clicked','catalog-tablet')">產品<br>型錄</div></a>
+				<div class="buy" onclick="gaClick('buttons /clicked /buynow-tablet','buttons','clicked','buynow-tablet')">立即<br>購買
+					<div class="shop-menu">
+						<ul>
+							<a href="http://store.asus.com/tw/search?q=Z500&s_c=1" target="_blank"><li>ASUS STORE</li></a>
+							<a href="http://24h.pchome.com.tw/store/DYAM8T" target="_blank"><li>PChome</li></a>
+							<a href="https://tw.buy.yahoo.com/?catid=11260&hpp=sub436catid11260" target="_blank"><li>YAHOO! 購物中心</li></a>
+							<a href="http://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=2104300110" target="_blank"><li>momo購物網</li></a>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+    </div>
+    <div class="section fp-auto-height-responsive page5" id="section4" style="background: #000000;">
+    <script>
+	  // Load the IFrame Player API code asynchronously.
+	  var tag = document.createElement('script');
+	  tag.src = "https://www.youtube.com/player_api";
+	  var firstScriptTag = document.getElementsByTagName('script')[0];
+	  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+	  // Replace the 'ytplayer' element with an <iframe> and
+	  // YouTube player after the API code downloads.
+	  var player;
+	  function onYouTubePlayerAPIReady() {
+	    player = new YT.Player('player', {
+	      videoId: 'bsfHiL8LaPQ',
+	      playerVars: {
+	      autoplay: 0,        // 在讀取時自動播放影片
+	      controls: 1,        // 在播放器顯示暫停／播放按鈕
+	      showinfo: 0,        // 隱藏影片標題
+	      modestbranding: 0,  // 隱藏YouTube Logo
+	      loop: 1,            // 讓影片循環播放
+	      autohide: 0,        // 當播放影片時隱藏影片控制列
+	      rel: 0			  // 相關影片
+	    },
+
+	    });
+	  }
+	</script>
+    	<div class="mask_d">
+    		<div class="coming">
+	    		<div id="myBtn-e"><div style="position: absolute;margin: auto; bottom: 0; right: 0;left: 0;width: 187px;height: 97px;cursor:pointer;">
+	    		<img src="img/video-play2.png"></div>
+	    		</div>
+    		</div>
+    	</div>
+    	<div class="photos slick-wrap" id="Conference">
+		  <div class="rdd"><a class="image-popup-vertical-fit" href="img/bphoto1.jpg"><img src="img/photo1.jpg"></a></div>
+		  <div class="rdd"><a class="image-popup-vertical-fit" href="img/bphoto2.jpg"><img src="img/photo2.jpg"></a></div>
+		  <div class="rdd"><a class="image-popup-vertical-fit" href="img/bphoto3.jpg"><img src="img/photo3.jpg"></a></div>
+		  <div class="rdd"><a class="image-popup-vertical-fit" href="img/bphoto4.jpg"><img src="img/photo4.jpg"></a></div>
+		  <div class="rdd"><a class="image-popup-vertical-fit" href="img/bphoto5.jpg"><img src="img/photo5.jpg"></a></div>
+		  <div class="rdd"><a class="image-popup-vertical-fit" href="img/bphoto6.jpg"><img src="img/photo6.jpg"></a></div>
+		  <div class="rdd"><a class="image-popup-vertical-fit" href="img/bphoto7.jpg"><img src="img/photo7.jpg"></a></div>
+		  <div class="rdd"><a class="image-popup-vertical-fit" href="img/bphoto8.jpg"><img src="img/photo8.jpg"></a></div>
+		  <div class="rdd"><a class="image-popup-vertical-fit" href="img/bphoto9.jpg"><img src="img/photo9.jpg"></a></div>
+		  <div class="rdd"><a class="image-popup-vertical-fit" href="img/bphoto10.jpg"><img src="img/photo10.jpg"></a></div>
+		  <div class="rdd"><a class="image-popup-vertical-fit" href="img/bphoto11.jpg"><img src="img/photo11.jpg"></a></div>
+		  <div class="rdd"><a class="image-popup-vertical-fit" href="img/bphoto12.jpg"><img src="img/photo12.jpg"></a></div>
+		  <div class="rdd"><a class="image-popup-vertical-fit" href="img/bphoto13.jpg"><img src="img/photo13.jpg"></a></div>
+		  <div class="rdd"><a class="image-popup-vertical-fit" href="img/bphoto14.jpg"><img src="img/photo14.jpg"></a></div>
+		  <div class="rdd"><a class="image-popup-vertical-fit" href="img/bphoto15.jpg"><img src="img/photo15.jpg"></a></div>
+		  <div class="rdd"><a class="image-popup-vertical-fit" href="img/bphoto16.jpg"><img src="img/photo16.jpg"></a></div>
+		  <div class="rdd"><a class="image-popup-vertical-fit" href="img/bphoto17.jpg"><img src="img/photo17.jpg"></a></div>
+		  <div class="rdd"><a class="image-popup-vertical-fit" href="img/bphoto18.jpg"><img src="img/photo18.jpg"></a></div>
+		  <div class="rdd"><a class="image-popup-vertical-fit" href="img/bphoto19.jpg"><img src="img/photo19.jpg"></a></div>	  
+    	</div>
+    </div>
+    <div class="section fp-auto-height-responsive page6" id="section5">
+    	<div class="mask_w">
+    		<div class="centercenter">
+    		<div class="content-left">
+    			<h3>Blogger / 名人分享</h3>
+    			<ul class="mixmenu">
+				<li class="selected" id="all_btn">ALL</li>
+				<li id="zenbook_btn" onclick="gaClick('buttons /clicked /blogger share-nb','buttons','clicked','blogger share-nb')"></li>
+				<li id="zenphone_btn" onclick="gaClick('buttons /clicked /blogger share-phone','buttons','clicked','blogger share-phone')"></li>
+				<li id="zenpad_btn" onclick="gaClick('buttons /clicked /blogger share-tablet','buttons','clicked','blogger share-tablet')"></li>
+				</ul>
+    		</div><div class="content-right">
+
+    				<div class="slick-wrap slick-bloger" id="Container">
+					  <a class="c-book" href="http://corinchien.blogspot.tw/2016/11/asus-zenbook-3-ux390.html?view=magazine" target="_blank"><div class="blogger-wrap">
+					  	<div class="bloggertxt">用最有效率的方式，超前每日的工作進度</div>
+					  	<div class="bloggerimg bloggerimg-A"></div>
+					  	<div class="bloggername">Corin 不羈優雅</div>
+					  </div></a>
+					  <a class="c-book" href="https://goo.gl/6UbMYP" target="_blank"><div class="blogger-wrap">
+					  	<div class="bloggertxt">絕對美型！秋冬時尚玫瑰金的完美撞色筆電</div>
+					  	<div class="bloggerimg bloggerimg-B"></div>
+					  	<div class="bloggername">michelle</div>
+					  </div></a>
+					  <a class="c-book" href="https://agirls.aotter.net/?p=50733" target="_blank"><div class="blogger-wrap">
+					  	<div class="bloggertxt">如何以高規格的時尚外型在輕薄筆電中坐穩一席之地</div>
+					  	<div class="bloggerimg bloggerimg-C"></div>
+					  	<div class="bloggername">電獺少女</div>
+					  </div></a>
+					  <a class="c-book" href="http://nikita57.blogspot.com/2016/11/3c-asus-zenbook-3-ux390.html" target="_blank"><div class="blogger-wrap">
+					  	<div class="bloggertxt">科技與秋冬時尚玫瑰金的完美撞色</div>
+					  	<div class="bloggerimg bloggerimg-D"></div>
+					  	<div class="bloggername">購物狂小姐</div>
+					  </div></a>
+
+					  <a class="c-phone" href="http://corinchien.blogspot.tw/2016/08/asus-zenfone-3-ze520kl-52.html" target="_blank"><div class="blogger-wrap">
+					  	<div class="bloggertxt">夏季就是要選時髦又有幹勁的白色手機！</div>
+					  	<div class="bloggerimg bloggerimg-E"></div>
+					  	<div class="bloggername">Corin 不羈優雅</div>
+					  </div></a>
+					  <a class="c-phone" href="https://agirls.aotter.net/?p=50401" target="_blank"><div class="blogger-wrap">
+					  	<div class="bloggertxt">萬元以下新選擇★全新雙玻璃設計</div>
+					  	<div class="bloggerimg bloggerimg-F"></div>
+					  	<div class="bloggername">電獺少女</div>
+					  </div></a>
+					  <a class="c-phone" href="http://minima.tw/asus-zenfone3/" target="_blank"><div class="blogger-wrap">
+					  	<div class="bloggertxt">超高顏值的夢幻月光白時尚手機。</div>
+					  	<div class="bloggerimg bloggerimg-G"></div>
+					  	<div class="bloggername">Amber</div>
+					  </div></a>
+					  
+					  <a class="c-pad" href="http://sugar523161.pixnet.net/blog/post/451658624" target="_blank"><div class="blogger-wrap">
+					  	<div class="bloggertxt">媽咪地追劇神器！世界最窄邊框平板</div>
+					  	<div class="bloggerimg bloggerimg-H"></div>
+					  	<div class="bloggername">卡蒂兒</div>
+					  </div></a>
+					  <a class="c-pad" href="https://aikolife.com/asus-zenpad-z500m/" target="_blank"><div class="blogger-wrap">
+					  	<div class="bloggertxt">最窄邊框＋大螢幕平板，追劇好幫手！</div>
+					  	<div class="bloggerimg bloggerimg-I"></div>
+					  	<div class="bloggername">Aiko</div>
+					  </div></a>
+					  <a class="c-pad" href="https://momoco.me/zenpad/" target="_blank"><div class="blogger-wrap">
+					  	<div class="bloggertxt">我的時尚美型追劇神器！</div>
+					  	<div class="bloggerimg bloggerimg-J"></div>
+					  	<div class="bloggername">momoco</div>
+					  </div></a>
+					  <a class="c-pad" href="http://loislinlin.pixnet.net/blog/post/220771841" target="_blank"><div class="blogger-wrap">
+					  	<div class="bloggertxt">追劇就用世界最窄邊框才過癮！</div>
+					  	<div class="bloggerimg bloggerimg-K"></div>
+					  	<div class="bloggername">露易絲</div>
+					  </div></a>
+					  <a class="c-phone"><div class="blogger-wrap"></div></a>
+					</div> 
+    			</div>
+    		</div>
+    	</div>
+    </div>
+    <div class="section fp-auto-height-responsive page7" id="section6">
+    	<div class="mask_w">
+    		<div class="content-left">
+    			<h3>Download / 桌布下載</h3>
+    			<div class="t1_btn active"><div class="cover"></div></div>
+    			<div class="t2_btn"><div class="cover"></div></div>
+    			<div class="t3_btn"><div class="cover"></div></div>
+    			<div class="t4_btn"><div class="cover"></div></div>
+    			<ul class="table-menu">
+    			<p><img src="img/zenbook.png" style="vertical-align: bottom;"></p>
+    			<div class="left">
+				<a href="desktop/1024x768.zip" onclick="gaClick('banners /downloaded /wallpaper-1024','banners','downloaded','wallpaper-1024')"><li>1024x768</li></a>
+				<a href="desktop/1280x800.zip" onclick="gaClick('banners /downloaded /wallpaper-1280','banners','downloaded','wallpaper-1280')"><li>1280x800</li></a>
+				<a href="desktop/1920x1080.zip" onclick="gaClick('banners /downloaded /wallpaper-1920','banners','downloaded','wallpaper-1920')"><li>1920x1080</li></a>
+				</div>
+				<div class="right">
+				<a href="desktop/zenpad3_wallpaper.zip" ><li><img src="img/zpad3.png" style="vertical-align: bottom;"></li></a>
+				<a href="desktop/zenfone3_wallpaper.zip" ><li><img src="img/zfone3.png" style="vertical-align: bottom;"></li></a>
+				</div>
+				</ul>
+				<div class="table-m"><a href="desktop/mobile-all.jpg" download><div class="desktop-mobile-download">下載這張</div></a></div>
+    		</div><div class="content-right">
+    			<div class="table-picture" id="table-img">
+    				<img src="img/t1.jpg">
+    			</div>
+    		</div>
+
+<div id="asus-api-footer" class="aai-ez l-footer" style="position: absolute;bottom: 0;">
+    <div class="aai-inner">
+      <div id="aai-copyright">
+        <ul id="copyright">
+          <li><a href="http://www.asus.com/tw/Terms_of_Use_Notice_Privacy_Policy/Marketing_and_Promotion_Event_Site" target="_blank" onclick="googleFamilySiteTrackEvent(this, 'SiteMap');return false">使用條款</a></li>
+          <li><a href="http://www.asus.com/tw/Terms_of_Use_Notice_Privacy_Policy/Privacy_Policy" target="_blank" onclick="googleFamilySiteTrackEvent(this, 'SiteMap');return false;">隱私權保護政策</a></li>
+          <li class="copyright">©ASUSTeK Computer Inc. All rights reserved.</li>
+        </ul>
+      </div>
+    </div>
+</div>
+
+    	</div>
+    </div>
+
+</div>
+
+
+
+<div class="lock_wrp" id="lock">
+        <div class="lock">
+            <i></i><br>
+            為提供您更好的體驗效果，請將您的裝置轉向直式瀏覽。
+            <span><br>平板電腦轉向後，請<span style="color:#f7608d;">重新整理</span>頁面</span>
+        </div>
+</div>
+
+<div id="myModal" class="modal" style="display: none;">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-body">
+    <span class="close"></span>
+      <h1><img src="img/box_title.png"></h1>
+
+	 	<div class="bag">
+	 		<div class="bag-left">
+	 			<img src="img/bag1.png">
+	 		</div><div class="bag-right">	 		
+	 			<h3>筆電包</h3>
+	 			<p>4/7-5/5購買<img src="img/zenbook3_w.svg">系列指定機種，華碩官網登錄送蜷川實花聯名筆電包。</p>
+	 			<div class="center"><a href="https://www.asus.com/tw/event/info/activity_2017springcompu-ZenBook/" target="_blank"><div class="more">了解更多</div></a></div>
+	 		</div>	 	   
+	 	</div>
+
+	 	<div class="box">
+	 		<div class="box-left">
+		 		<img src="img/bag2.png">
+	 		</div><div class="box-right">
+		 		<h3>手拿包</h3>
+				<p>活動已結束</p>
+	 			<!-- <p>11/25~01/31全通路買<img src="img/zenpad3_w.svg">系列指定機種，華碩官網登錄送蜷川實花聯名手拿包。</p>
+		 		<div class="center"><a href="https://www.asus.com/tw/event/info/activity_ZenPadNinamika" target="_blank"><div class="more">了解更多</div></a></div>
+		 		<p>12/1~1/2至全台中華電信/神腦數位門市購買<img src="img/zenfone3_w.svg">指定機種，並完成線上登錄就送蜷川實花聯名手拿包。</p>
+		 		<div class="center"><a href="https://www.asus.com/tw/event/info/activity_asus_dec_sp_mika" target="_blank"><div class="more">了解更多</div></a></div>
+		 		<p>即日起至ASUS Store購買9000元以上指定機種， 隨貨贈送蜷川實花聯名手拿包。</p>
+		 		<div class="center"><a href="http://store.asus.com/tw/category/A47863?sort=uitox_price&asc=1&page=1" target="_blank"><div class="more">了解更多</div></a></div>
+		 		<span>*數量有限送完為止，贈品隨機出貨，恕不挑選</span> -->
+	 		</div>	
+	 	</div>
+      
+    </div>
+  </div>
+</div>
+
+
+<div id="myModal-b" class="modal-b" style="display: none;">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-body">
+    <span class="close-b"></span>
+	 	<div class="master">
+	 		<h2>蜷川實花 / <br class="show480">Mika Ninagawa</h2>
+	 		<h3>攝影師・電影導演</h3>
+	 		<ul>
+		 	   	<li>獲得日本攝影界最具權威的木村伊兵衛攝影獎。</li>
+		 	   	<li>2008年個人作品展「蜷川實花展 地上的花、天上的色」到場人數更打破多個美術館的記錄。</li>
+		 	   	<li>作品延伸至時尚界，過去合作品牌包括ETRO，CELINE，LeSportsac，mastermind JAPAN等，並推出限量系列，近年更創立了個人品牌 M/mika ninagawa。</li>
+		 	   	<li>除了攝影，蜷川實花更涉足電影，2007年執導首部電影『惡女花魁』，2012年導演的『惡女羅曼死』亦突破了22億日元的票房記錄。</li>
+		 	   	<li>現為小山登美夫畫廊所屬藝術家的蜷川實花於2014年被委任為2020東京奧運會的籌委理事之一。</li>
+		 	   	<li>2016年，首次於台北當代藝術館舉辦大型回顧展『蜷川實花展』，人數更打破藝術館紀錄達13萬人次。</li>
+	 	   </ul>
+	 	   <p><a href="http://www.ninamika.com/tw/" target="_blank">http://www.ninamika.com/tw/</a></p>	 	   
+	 	</div>
+     
+    </div>
+  </div>
+</div>
+
+<div id="myModal-c" class="modal-c" style="display: none;">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-body">
+    <span class="close-c"></span>
+		 		<div class="iframe-wrap">
+					<div id="player"></div>
+				</div>        
+    </div>
+  </div>
+</div>
+
+</div>
+
+<script src='js/lightdesk.js'></script>
+<script src='js/jquery.parallax.min.js'></script>
+<script>
+  $(document).ready(function () {
+    if ($(window).width() >= 900) {
+      $('#scene').parallax();
+    }
+  });
+</script>
+<script>
+$(document).ready(function(){
+	$('#Conference').slick({
+    dots: false,
+    arrows:true,
+    infinite: true,
+    slidesToShow: 7,        
+    rows:1,
+    slidesPerRow: 1,
+    slidesToScroll: 1,
+
+    responsive: [
+    {
+      breakpoint: 1700,
+      settings: {
+        slidesToShow: 6,
+        rows:1,
+        slidesPerRow: 1,        
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 1400,
+      settings: {
+        slidesToShow: 5,
+        rows:1,
+        slidesPerRow: 1,
+        slidesToScroll: 1
+        
+      }
+    },
+    {
+      breakpoint: 840,
+      settings: {
+        slidesToShow: 4,
+        rows:1,
+        slidesPerRow: 1,
+        slidesToScroll: 1
+        
+      }
+    },
+    {
+      breakpoint: 640,
+      settings: {
+        slidesToShow: 2,
+        rows:1,
+        slidesPerRow: 1,
+        slidesToScroll: 2
+        
+      }
+    }
+  ]
+
+  });
+
+  function goslick () {
+  $('#Container').slick({
+    dots: true,
+    arrows:false,
+    infinite: false,
+    slidesToShow: 4,        
+    rows:1,
+    slidesPerRow: 1,
+    slidesToScroll: 4,
+
+     responsive: [
+    {
+      breakpoint: 840,
+      settings: {
+        slidesToShow: 3,
+        rows:1,
+        slidesPerRow: 1,        
+        slidesToScroll: 3
+      }
+    },
+    {
+      breakpoint: 640,
+      settings: {
+        slidesToShow: 1,
+        rows:2,
+        slidesPerRow: 2,
+        slidesToScroll: 1
+        
+      }
+    }
+  ]
+  });
+
+  }
+
+  goslick();
+  var $slider_ori = $('.slick-bloger');
+  var $slider = $('.slick-bloger.slick-slider');
+  var $slider_clone = $slider.clone( true, true ); 
+
+  $( '#all_btn').on( 'click', function(){
+
+      $(".content-left ul li").removeClass();
+      $(this).addClass("selected");
+
+      var $new_slider = $slider_clone.clone( true, true );
+
+      $slider_ori.slick( 'unslick' );
+      $slider.empty(); 
+
+      $slider.append( $new_slider.find( '.c-book,.c-phone,.c-pad' ) );
+      goslick();
+  });
+  $( '#zenbook_btn').on( 'click', function(){
+
+      $(".content-left ul li").removeClass();
+      $(this).addClass("book-selected");
+
+      var $new_slider = $slider_clone.clone( true, true );
+
+      $slider_ori.slick( 'unslick' );
+      $slider.empty(); 
+
+      $slider.append( $new_slider.find( '.c-book' ) );
+      goslick();
+  });
+  $( '#zenphone_btn').on( 'click', function(){
+
+      $(".content-left ul li").removeClass();
+      $(this).addClass("fone-selected");
+
+      var $new_slider = $slider_clone.clone( true, true );
+
+      $slider_ori.slick( 'unslick' );
+      $slider.empty(); 
+
+      $slider.append( $new_slider.find( '.c-phone' ) );
+      goslick();
+  });
+  $( '#zenpad_btn').on( 'click', function(){
+
+      $(".content-left ul li").removeClass();
+      $(this).addClass("pad-selected");
+      var $new_slider = $slider_clone.clone( true, true );
+
+      $slider_ori.slick( 'unslick' );
+      $slider.empty(); 
+
+      $slider.append( $new_slider.find( '.c-pad' ) );
+      goslick();
+  });
+
+
+});
+</script>
+<script>
+$(document).ready(function() {
+
+  $('.image-popup-vertical-fit').magnificPopup({
+    type: 'image',
+    closeOnContentClick: true,
+    mainClass: 'mfp-img-mobile',
+    image: {
+      verticalFit: true
+    }
+    
+  });
+
+  $('.image-popup-fit-width').magnificPopup({
+    type: 'image',
+    closeOnContentClick: true,
+    image: {
+      verticalFit: false
+    }
+  });
+
+  $('.image-popup-no-margins').magnificPopup({
+    type: 'image',
+    closeOnContentClick: true,
+    closeBtnInside: false,
+    fixedContentPos: true,
+    mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
+    image: {
+      verticalFit: true
+    },
+    zoom: {
+      enabled: true,
+      duration: 300 // don't foget to change the duration also in CSS
+    }
+  });
+
+});
+</script>
+<script>
+        function gaClick(event,category, action, label) {
+            ga('send', event, category, action, label);
+        }
+</script>
+</body>
+
+</html>
