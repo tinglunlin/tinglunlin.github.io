@@ -1,0 +1,1 @@
+"use strict";!function(e){e(window).on("load",function(){e(".fullpage_s1").addClass("an_active")}),new fullpage("#fullpage",{anchors:["s1","s2","s3","s4","s5","s6"],responsiveWidth:1024,afterResponsive:function(s){},onLeave:function(s){0==s.index&&e(".fullpage_s1").removeClass("an_active"),1==s.index&&e(".fullpage_s1").addClass("an_active")}})}($);
